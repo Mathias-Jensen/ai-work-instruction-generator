@@ -1,0 +1,89 @@
+{
+  "title": "Work Instruction: Sensor Replacement on Conveyor System",
+  "purpose": "Provide a safe and structured procedure for replacing a defective sensor on a conveyor system.",
+  "scope": "Applies to maintenance technicians performing sensor replacement on the conveyor system.",
+  "equipment_or_system": "Conveyor system",
+  "target_user": "Maintenance technician",
+  "experience_level": "intermediate",
+  "required_tools": [
+    "Screwdriver",
+    "Multimeter",
+    "Lockout/tagout equipment"
+  ],
+  "required_materials": [
+    "Replacement sensor"
+  ],
+  "safety_precautions": [
+    {
+      "precaution": "Disconnect and isolate power before removing covers or working near moving parts.",
+      "reason": "Prevents accidental start-up, electrical hazards and injury from moving equipment.",
+      "risk_level": "high"
+    }
+  ],
+  "procedure_steps": [
+    {
+      "step_number": 1,
+      "instruction": "Stop the conveyor system and apply lockout/tagout according to site procedure.",
+      "expected_result": "The conveyor system is safely isolated.",
+      "safety_note": "Verify isolation before beginning work."
+    },
+    {
+      "step_number": 2,
+      "instruction": "Remove the sensor cover to access the defective sensor.",
+      "expected_result": "The sensor is accessible for removal.",
+      "safety_note": null
+    },
+    {
+      "step_number": 3,
+      "instruction": "Disconnect and remove the defective sensor.",
+      "expected_result": "The defective sensor has been removed.",
+      "safety_note": null
+    },
+    {
+      "step_number": 4,
+      "instruction": "Install the replacement sensor and adjust its position.",
+      "expected_result": "The replacement sensor is mounted and aligned.",
+      "safety_note": null
+    },
+    {
+      "step_number": 5,
+      "instruction": "Verify the sensor signal in the HMI.",
+      "expected_result": "The HMI displays the expected sensor signal.",
+      "safety_note": null
+    },
+    {
+      "step_number": 6,
+      "instruction": "Run a test cycle and confirm normal operation.",
+      "expected_result": "The conveyor completes the test cycle without faults.",
+      "safety_note": "Keep clear of moving parts during the test cycle."
+    }
+  ],
+  "quality_checks": [
+    {
+      "check": "Verify sensor signal in the HMI.",
+      "acceptance_criteria": "The sensor changes state correctly when activated."
+    },
+    {
+      "check": "Run one complete test cycle.",
+      "acceptance_criteria": "The conveyor operates without alarms or unexpected stops."
+    }
+  ],
+  "risks_and_mitigations": [
+    {
+      "risk": "Incorrect sensor alignment may cause unreliable detection.",
+      "mitigation": "Adjust sensor position and verify signal response before returning the system to operation.",
+      "risk_level": "medium"
+    }
+  ],
+  "missing_information": [
+    {
+      "item": "Exact sensor type or part number",
+      "why_it_matters": "The correct replacement part must be verified before performing the procedure."
+    }
+  ],
+  "assumptions": [
+    "The technician is trained and authorized to perform lockout/tagout.",
+    "A compatible replacement sensor is available."
+  ],
+  "human_review_required": true
+}

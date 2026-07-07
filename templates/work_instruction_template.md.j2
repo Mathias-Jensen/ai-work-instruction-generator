@@ -1,0 +1,178 @@
+# {{ work_instruction.title }}
+
+> **⚠️ AI-generated draft**
+>
+> This document is automatically generated using AI and **must be reviewed and approved by a qualified person before use**.
+
+---
+
+# Purpose
+
+{{ work_instruction.purpose }}
+
+---
+
+# Scope
+
+{{ work_instruction.scope }}
+
+---
+
+# Equipment / System
+
+{{ work_instruction.equipment_or_system }}
+
+---
+
+# Target User
+
+- {{ work_instruction.target_user }}
+- Experience level: **{{ work_instruction.experience_level.value }}**
+
+---
+
+# Required Tools
+
+{% if work_instruction.required_tools %}
+{% for tool in work_instruction.required_tools %}
+- {{ tool }}
+{% endfor %}
+{% else %}
+No tools specified.
+{% endif %}
+
+---
+
+# Required Materials
+
+{% if work_instruction.required_materials %}
+{% for material in work_instruction.required_materials %}
+- {{ material }}
+{% endfor %}
+{% else %}
+No materials specified.
+{% endif %}
+
+---
+
+# Safety Precautions
+
+{% if work_instruction.safety_precautions %}
+{% for item in work_instruction.safety_precautions %}
+## {{ loop.index }}
+
+**Precaution**
+
+{{ item.precaution }}
+
+**Reason**
+
+{{ item.reason or "Not specified." }}
+
+**Risk Level**
+
+{{ item.risk_level.value }}
+
+{% endfor %}
+{% else %}
+No safety precautions provided.
+{% endif %}
+
+---
+
+# Procedure
+
+{% for step in work_instruction.procedure_steps %}
+
+## Step {{ step.step_number }}
+
+**Instruction**
+
+{{ step.instruction }}
+
+{% if step.expected_result %}
+**Expected Result**
+
+{{ step.expected_result }}
+{% endif %}
+
+{% if step.safety_note %}
+**Safety Note**
+
+{{ step.safety_note }}
+{% endif %}
+
+{% endfor %}
+
+---
+
+# Quality Checks
+
+{% if work_instruction.quality_checks %}
+{% for check in work_instruction.quality_checks %}
+- **{{ check.check }}**
+  - Acceptance Criteria: {{ check.acceptance_criteria }}
+{% endfor %}
+{% else %}
+No quality checks specified.
+{% endif %}
+
+---
+
+# Risks and Mitigations
+
+{% if work_instruction.risks_and_mitigations %}
+{% for risk in work_instruction.risks_and_mitigations %}
+## {{ loop.index }}
+
+**Risk**
+
+{{ risk.risk }}
+
+**Mitigation**
+
+{{ risk.mitigation }}
+
+**Risk Level**
+
+{{ risk.risk_level.value }}
+
+{% endfor %}
+{% else %}
+No risks identified.
+{% endif %}
+
+---
+
+# Missing Information
+
+{% if work_instruction.missing_information %}
+{% for item in work_instruction.missing_information %}
+- **{{ item.item }}**
+  - {{ item.why_it_matters }}
+{% endfor %}
+{% else %}
+No missing information identified.
+{% endif %}
+
+---
+
+# AI Assumptions
+
+{% if work_instruction.assumptions %}
+{% for assumption in work_instruction.assumptions %}
+- {{ assumption }}
+{% endfor %}
+{% else %}
+No assumptions made.
+{% endif %}
+
+---
+
+# Human Review
+
+{% if work_instruction.human_review_required %}
+**Human review is required before this document can be used operationally.**
+{% else %}
+Human review not required.
+{% endif %}
