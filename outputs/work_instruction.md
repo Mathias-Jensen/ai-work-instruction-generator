@@ -1,4 +1,4 @@
-# Work Instruction: Sensor Replacement on Conveyor System
+# Sensor Replacement on Conveyor System
 
 > **⚠️ AI-generated draft**
 >
@@ -8,13 +8,13 @@
 
 # Purpose
 
-Provide a safe and structured procedure for replacing a defective sensor on a conveyor system.
+To provide step-by-step instructions for safely replacing a defective sensor on the conveyor system to ensure proper operation.
 
 ---
 
 # Scope
 
-Applies to maintenance technicians performing sensor replacement on the conveyor system.
+This instruction covers the replacement of the sensor on the conveyor system, including safety precautions, sensor removal, installation, adjustment, and testing.
 
 ---
 
@@ -33,15 +33,13 @@ Conveyor system
 
 # Required Tools
 
-- Screwdriver
-- Multimeter
-- Lockout/tagout equipment
+- torque wrench
 
 ---
 
 # Required Materials
 
-- Replacement sensor
+- sensor part number XYc1234d
 
 ---
 
@@ -51,11 +49,25 @@ Conveyor system
 
 **Precaution**
 
-Disconnect and isolate power before removing covers or working near moving parts.
+Wear hard hat, eye goggles, and gloves
 
 **Reason**
 
-Prevents accidental start-up, electrical hazards and injury from moving equipment.
+To protect against potential physical injury during maintenance
+
+**Risk Level**
+
+medium
+
+## 2
+
+**Precaution**
+
+Ensure lockout of power by confirming clicking sound and minimal machine movement when pulled
+
+**Reason**
+
+To prevent accidental machine startup and electrical hazards
 
 **Risk Level**
 
@@ -71,18 +83,33 @@ high
 
 **Instruction**
 
-Stop the conveyor system and apply lockout/tagout according to site procedure.
+Stop the conveyor system completely.
 
 **Expected Result**
 
-The conveyor system is safely isolated.
+Conveyor is fully stopped and no movement is detected.
 
 **Safety Note**
 
-Verify isolation before beginning work.
+Ensure the conveyor has come to a complete stop before proceeding.
 
 
 ## Step 2
+
+**Instruction**
+
+Lock out the power supply to the conveyor system and verify lockout by listening for the clicking sound and gently pulling the machine to confirm only a small give.
+
+**Expected Result**
+
+Power is securely locked out and machine cannot start unexpectedly.
+
+**Safety Note**
+
+This step is critical to prevent accidental startup and injury.
+
+
+## Step 3
 
 **Instruction**
 
@@ -90,19 +117,7 @@ Remove the sensor cover to access the defective sensor.
 
 **Expected Result**
 
-The sensor is accessible for removal.
-
-
-
-## Step 3
-
-**Instruction**
-
-Disconnect and remove the defective sensor.
-
-**Expected Result**
-
-The defective sensor has been removed.
+Sensor cover is safely removed without damage.
 
 
 
@@ -110,11 +125,11 @@ The defective sensor has been removed.
 
 **Instruction**
 
-Install the replacement sensor and adjust its position.
+Remove the defective sensor from its mounting.
 
 **Expected Result**
 
-The replacement sensor is mounted and aligned.
+Defective sensor is fully detached and ready for replacement.
 
 
 
@@ -122,11 +137,11 @@ The replacement sensor is mounted and aligned.
 
 **Instruction**
 
-Verify the sensor signal in the HMI.
+Install the new sensor (part number XYc1234d) in the correct position.
 
 **Expected Result**
 
-The HMI displays the expected sensor signal.
+New sensor is properly mounted and aligned.
 
 
 
@@ -134,25 +149,60 @@ The HMI displays the expected sensor signal.
 
 **Instruction**
 
-Run a test cycle and confirm normal operation.
+Adjust the sensor position as needed to ensure proper operation.
 
 **Expected Result**
 
-The conveyor completes the test cycle without faults.
+Sensor is correctly positioned for accurate detection.
 
-**Safety Note**
 
-Keep clear of moving parts during the test cycle.
+
+## Step 7
+
+**Instruction**
+
+Tighten all nuts and bolts securing the sensor to a torque of 1 Nm using a torque wrench.
+
+**Expected Result**
+
+All fasteners are tightened to the specified torque.
+
+
+
+## Step 8
+
+**Instruction**
+
+Check the sensor signal on the Human Machine Interface (HMI) to verify correct operation.
+
+**Expected Result**
+
+Sensor signal is displayed correctly on the HMI.
+
+
+
+## Step 9
+
+**Instruction**
+
+Run a test cycle of the conveyor system to confirm the sensor replacement was successful.
+
+**Expected Result**
+
+Conveyor operates normally with the new sensor functioning correctly.
+
 
 
 ---
 
 # Quality Checks
 
-- **Verify sensor signal in the HMI.**
-  - Acceptance Criteria: The sensor changes state correctly when activated.
-- **Run one complete test cycle.**
-  - Acceptance Criteria: The conveyor operates without alarms or unexpected stops.
+- **Verify sensor signal on HMI**
+  - Acceptance Criteria: Sensor signal must be stable and indicate proper detection.
+- **Torque of sensor mounting nuts and bolts**
+  - Acceptance Criteria: All fasteners tightened to 1 Nm as specified.
+- **Test cycle operation**
+  - Acceptance Criteria: Conveyor runs without faults and sensor triggers as expected.
 
 ---
 
@@ -162,11 +212,39 @@ Keep clear of moving parts during the test cycle.
 
 **Risk**
 
-Incorrect sensor alignment may cause unreliable detection.
+Accidental startup of conveyor during maintenance
 
 **Mitigation**
 
-Adjust sensor position and verify signal response before returning the system to operation.
+Implement lockout/tagout procedures and verify lockout by physical checks.
+
+**Risk Level**
+
+high
+
+## 2
+
+**Risk**
+
+Injury from sharp edges or moving parts
+
+**Mitigation**
+
+Wear personal protective equipment including hard hat, eye goggles, and gloves.
+
+**Risk Level**
+
+medium
+
+## 3
+
+**Risk**
+
+Improper sensor installation causing conveyor malfunction
+
+**Mitigation**
+
+Follow torque specifications and verify sensor signal on HMI before operation.
 
 **Risk Level**
 
@@ -177,15 +255,20 @@ medium
 
 # Missing Information
 
-- **Exact sensor type or part number**
-  - The correct replacement part must be verified before performing the procedure.
+- **Detailed sensor adjustment procedure**
+  - Proper sensor alignment is critical for accurate operation and is not described.
+- **Specific tools besides torque wrench (e.g., screwdrivers, wrenches)**
+  - Additional tools required for sensor cover removal and sensor replacement are not listed.
+- **Test cycle parameters**
+  - Details on how to run and evaluate the test cycle are missing, which affects validation.
 
 ---
 
 # AI Assumptions
 
-- The technician is trained and authorized to perform lockout/tagout.
-- A compatible replacement sensor is available.
+- The maintenance technician has access to and knowledge of lockout/tagout procedures.
+- The sensor cover removal does not require special tools beyond common hand tools.
+- The conveyor system's HMI provides real-time sensor status signals.
 
 ---
 
