@@ -2,6 +2,8 @@
 
 > AI-assisted generation of structured technical documentation from unstructured engineering notes.
 
+![alt text](media/app.gif)
+
 ---
 
 ## Overview
@@ -65,27 +67,7 @@ Human review is always required before operational use.
 
 ## Architecture
 
-```text
-User Input
-      │
-      ▼
-Prompt Builder
-      │
-      ▼
-LLM
-      │
-      ▼
-JSON Validation
-      │
-      ▼
-Business Rules
-      │
-      ▼
-Markdown Generator
-      │
-      ▼
-Work Instruction
-```
+![alt text](media/architecture.png)
 
 ---
 
@@ -130,23 +112,11 @@ streamlit run app.py
 
 Input:
 
-```text
-Stopped conveyor.
-Applied lockout/tagout.
-Removed sensor.
-Installed replacement.
-Verified signal.
-Ran test cycle.
-```
+![alt text](media/input.png)
 
 Output:
 
-- Structured work instruction
-- Safety precautions
-- Quality checks
-- Risk assessment
-- AI assumptions
-- Missing information
+![alt text](media/output.gif)
 
 ---
 
